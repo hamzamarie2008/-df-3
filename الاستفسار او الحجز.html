@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="صفحة الاستفسار أو الحجز في منتجع إن ون للجولف">
+    <title>الاستفسار أو الحجز - منتجع إن ون للجولف</title>
+    <link rel="stylesheet" href="css/الاستفسار او الحجز .css">
+</head>
+<body>
+    <header>
+        <div class="menu-container">
+            <h1>منتجع إن ون للجولف</h1>
+            <button class="menu-toggle">☰ القائمة</button>
+        </div>
+        <img src="img/شعار.png" alt="شعار المنتجع"> 
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="الاستفسار او الحجز.html">الاستفسار والحجز</a></li>
+            <li><a href="الملاعب.html">الملاعب</a></li>
+            <li><a href="التدريبات.html">التدريب</a></li>
+            <li><a href="الحزم.html">الحزم</a></li>
+            <li><a href="عن المنتجع.html">عن المنتجع</a></li>
+            <li><a href="متجر للمحترفين.html">متجر للمحترفين</a></li>
+            <li><a href="المطاعم والفنادق.html">المطاعم والفنادق</a></li>
+            <li><a href="من نحن.html">من نحن</a></li>
+            <li><a href="المرافق.html">المرافق</a></li>
+            <li><a href="خريطة الموقع.html">خريطة الموقع</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="contact" class="section">
+            <h2>للاستفسار أو الحجز</h2>
+            <form action="#" method="post">
+                <label for="name">اسمك الكامل:</label>
+                <input type="text" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" placeholder="ادخل بريدك الإلكتروني" required>
+
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" placeholder="ادخل رقم هاتفك" required>
+
+                <label for="message">الاستفسار أو الرسالة:</label>
+                <textarea id="message" name="message" rows="4" placeholder="اكتب استفسارك أو طلبك هنا" required></textarea>
+
+                <button type="submit">إرسال الرسالة</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;منتجع إن ون للجولف .</p>
+    </footer>
+
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector("nav").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

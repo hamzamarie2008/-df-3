@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>الحزم - منتجع إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/الحزم.css">
+</head>
+<body>
+    <header>
+        <img src="img/شعار.png" alt="شعار المنتجع"> 
+    </header>
+    <nav id="navbar">
+        <a href="index.html">الرئيسية</a>
+        <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+        <a href="الملاعب.html">الملاعب</a>
+        <a href="التدريبات.html">التدريب</a>
+        <a href="الحزم.html">الحزم</a>
+        <a href="عن المنتجع.html">عن المنتجع</a>
+        <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+        <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+        <a href="من نحن.html">من نحن</a>
+        <a href="المرافق.html">المرافق</a>
+        <a href="خريطة الموقع.html">خريطة الموقع</a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+
+    <div class="container">
+        <h2>حزم الإقامة والجولف</h2>
+        <h3>خمس جولات</h3>
+        <ul>
+            <li>إقامة كاملة لمدة خمس ليال في جناح فاخر</li>
+            <li>خمس جولات - 18 حفرة</li>
+            <li>جولة واحدة مضمونة في ملعب "سي فيو" الشهير</li>
+            <li>جلسة تدريب رقمية مجانية</li>
+        </ul>
+        <h3>الجولة الثلاثية</h3>
+        <ul>
+            <li>إقامة لمدة ليلتين في غرفة مزدوجة مع وجبة الإفطار</li>
+            <li>ثلاث جولات - 18 حفرة</li>
+            <li>تأجير مجاني للعربات</li>
+        </ul>
+        <h3>استراحة استجمام</h3>
+        <ul>
+            <li>إقامة لليلة واحدة مع وجبة إفطار كاملة</li>
+            <li>تناول العشاء في أي من مطاعم المنتجع</li>
+            <li>الوصول إلى الملاعب (باستثناء ملعب "سي فيو")</li>
+            <li>تأجير نادي مجاني</li>
+        </ul>
+        <p>تتوفر حزم مخصصة للفعاليات المؤسسية والإقامات الطويلة. يُرجى الاتصال بالشركة للحصول على المزيد من التفاصيل.</p>
+    </div>
+
+    <footer>
+        <p>&copy; منتجع هول إن ون للجولف .</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

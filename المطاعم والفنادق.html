@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>المطاعم والفنادق - منتجع هول إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/المطاعم و الفنادق .css"> <!-- ربط ملف الـ CSS الخارجي -->
+</head>
+<body>
+    <header>
+        <img src="img/شعار.png" alt="شعار المنتجع" class="logo">
+        <div class="hamburger" onclick="toggleNav()">☰</div> <!-- زر الهامبرغر -->
+        <nav id="navbar">
+            <a href="index.html">الرئيسية</a>
+            <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+            <a href="الملاعب.html">الملاعب</a>
+            <a href="التدريبات.html">التدريب</a>
+            <a href="الحزم.html">الحزم</a>
+            <a href="عن المنتجع.html">عن المنتجع</a>
+            <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+            <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+            <a href="من نحن.html">من نحن</a>
+            <a href="المرافق.html">المرافق</a>
+            <a href="خريطة الموقع.html">خريطة الموقع</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>المطاعم والفنادق </h2>
+        <p>استمتع بتجربة الإقامة بالفنادق وتجربة الطعام الرائعة في منتجع هول إن ون، حيث نقدم مجموعة متنوعة من المطاعم والمقاهي والفنادق المختلفة التي تناسب جميع الأذواق.</p>
+    </div>
+
+    <div class="images-container">
+        <div>
+            <img src="img/فندق.jpg" alt="فندق">
+            <a class="book-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+        </div>
+        <div>
+            <img src="img/مطعم.jpg" alt="مطعم">
+            <a class="book-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; منتجع هول إن ون للجولف.</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var navbar = document.getElementById('navbar');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

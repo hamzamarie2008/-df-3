@@ -1,0 +1,117 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #34495e;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    margin: 0;
+}
+
+.content {
+    width: 90%;
+    margin: 40px auto;
+    text-align: left; /* لجعل النص يظهر بجانب الصورة */
+}
+
+.content img {
+    width: 40%; /* تصغير حجم الصورة */
+    max-height: 500px; /* تقليل الارتفاع */
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 20px 0;
+    float: right; /* جعل الصورة في اليمين */
+}
+
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    clear: both; /* منع تداخل الفوتر مع الصورة */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    nav.open .nav-links {
+        display: flex;
+    }
+
+    .content img {
+        width: 80%; /* تكبير الصورة عند تصغير الشاشة */
+        float: none; /* جعل الصورة وسط الصفحة في الأجهزة الصغيرة */
+        margin: 20px auto;
+    }
+}

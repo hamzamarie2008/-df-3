@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>المرافق - منتجع إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/الملاعب .css"> <!-- ربط ملف الـ CSS الخارجي -->
+</head>
+<body>
+    <header>
+        <img src="img/شعار.png" alt="شعار المنتجع"> 
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+            <a href="الملاعب.html">الملاعب</a>
+            <a href="التدريبات.html">التدريب</a>
+            <a href="الحزم.html">الحزم</a>
+            <a href="عن المنتجع.html">عن المنتجع</a>
+            <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+            <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+            <a href="من نحن.html">من نحن</a>
+            <a href="المرافق.html">المرافق</a>
+            <a href="خريطة الموقع.html">خريطة الموقع </a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="text-content">
+            <h2>الملاعب</h2>
+            <ul>
+                <li>ثلاثة ملاعب لبطولات الجولف بما في ذلك ملعب "سي فيو" الشهير</li>
+            </ul>
+        </div>
+        <div class="image-gallery">
+            <figure>
+                <img src="img/ملعب 1.jpg" alt="صورة ملعب 1">
+                <figcaption>الملعب الأول: ملعب الجولف 1 "يُعرف ملعب الجولف الأول بتصميمه الرائع وإطلالاته الخلابة."</figcaption>
+                <div>
+                    <a class="view-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="img/ملعب 2.jpg" alt="صورة ملعب 2">
+                <figcaption>الملعب الثاني: ملعب الجولف 2 "هذا الملعب يبرز بتحدياته المبتكرة التي تجذب عشاق الإثارة."</figcaption>
+                <div>
+                    <a class="view-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="img/ملعب 3.jpg" alt="صورة ملعب 3">
+                <figcaption>الملعب الثالث: ملعب الجولف 3 "تجربة فريدة لا تُنسى مع مناظره البانورامية المدهشة."</figcaption>
+                <div>
+                    <a class="view-btn" href="الاستفسار او الحجز.html">احجز الآن</a>
+                </div>
+            </figure>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;  منتجع هول إن ون للجولف .</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.querySelector('.nav-links');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

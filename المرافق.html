@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>المرافق - منتجع إن ون للجولف</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/المرافق.css"> <!-- ربط ملف الـ CSS الخارجي -->
+</head>
+<body>
+    <header>
+        <img src="img/شعار.png" alt="شعار المنتجع"> 
+    </header>
+    <nav id="navbar">
+        <a href="index.html">الرئيسية</a>
+        <a href="الاستفسار او الحجز.html">الاستفسار والحجز</a>
+        <a href="الملاعب.html">الملاعب</a>
+        <a href="التدريبات.html">التدريب</a>
+        <a href="الحزم.html">الحزم</a>
+        <a href="عن المنتجع.html">عن المنتجع</a>
+        <a href="متجر للمحترفين.html">متجر للمحترفين</a>
+        <a href="المطاعم والفنادق.html">المطاعم والفنادق</a>
+        <a href="من نحن.html">من نحن</a>
+        <a href="المرافق.html">المرافق</a>
+        <a href="خريطة الموقع.html">خريطة الموقع </a>
+    </nav>
+
+    <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+
+    <div class="container">
+        <h2>المرافق</h2>
+        <ul>
+            <li>ثلاثة ملاعب لبطولات الجولف بما في ذلك ملعب "سي فيو" الشهير</li>
+            <li>ناديان</li>
+            <li>الإقامة في الفنادق</li>
+            <li>المطاعم والمقاهي</li>
+            <li>متجر للمحترفين</li>
+            <li>ساحة تدريب مُضاءة بالأنوار الكشَّافة</li>
+            <li>دروس الجولف</li>
+            <li>التدريب الرقمي</li>
+            <li>خدمة المساعدة على حمل أدوات الجولف</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; منتجع هول إن ون للجولف .</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            const navbar = document.getElementById('navbar');
+            navbar.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>

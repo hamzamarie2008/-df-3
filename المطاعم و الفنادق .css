@@ -1,0 +1,182 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #2d3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+header img {
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+header h1 {
+    font-size: 2.2em;
+    margin: 0;
+    text-align: center;
+    flex-grow: 1;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    margin: 5px 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 140px;
+}
+
+h2, h3 {
+    color: #2d3e50;
+    font-size: 1.8em;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.images-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-container img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+.book-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: #e67e22;
+}
+
+footer {
+    background-color: #2d3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: auto;
+        background-color: #34495e;
+        font-size: 0.9em;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        background-color: transparent;
+        font-size: 1em;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
